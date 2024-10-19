@@ -1,5 +1,7 @@
 # API Discovery  
 
+>APISEC  
+
 ----  
 
 ## Setup Requirements  
@@ -95,5 +97,13 @@ sudo docker-compose up -d
 ```  
 
 >Check status of running docker container instances: `docker ps -a`  
+>Stop docker: `sudo docker-compose stop`  
+>Restart docker if crapi-community unhealthy fail to start:  
 
+```
+sudo docker-compose restart
+```  
 
+>Navigate to `http://127.0.0.1/vapi` to get to the vAPI home page.  
+>vAPI comes with a prebuilt Postman collection and environment.  
+>Get JSON files from the vAPI/postman folder.  

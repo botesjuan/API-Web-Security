@@ -21,3 +21,9 @@
 
 ----  
 
+## References  
+
+>[CASA Multiple Choice Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+>[ASCP Practical 12 hours hands-on Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
+
+
