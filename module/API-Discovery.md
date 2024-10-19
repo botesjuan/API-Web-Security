@@ -31,6 +31,10 @@ sudo apt install golang-go
 
 >[Setting up Kali Linux and More for API course](https://university.apisec.ai/products/api-penetration-testing/categories/2150251486/posts/2157710611)  
 
+>Start `mitmproxy` and set Firefox to use foxyproxy 8080, same as burp, and install certificates for mitmproxy.  
+
+----  
+
 >Add new Kali Linux user, add new user to sudo privilege groups and change new user shell to use:  
 
 ```bash
@@ -43,9 +47,32 @@ sudo passwd hapihacker
 >jwt tool install:  
 
 ```
+cd /opt
 sudo git clone https://github.com/ticarpi/jwt_tool
+cd jwt_tool
+
+python3 -m pip install termcolor cprint pycryptodomex requests
+
+sudo chmod +x jwt_tool.py
+sudo ln -s /opt/jwt_tool/jwt_tool.py /usr/bin/jwt_tool
 ```  
 
+>Start JWT tool with command `jwt_tool`.  
 
+>Install KiteRunner:  
+
+```
+cd /opt
+sudo git clone  https://github.com/assetnote/kiterunner.git
+cd kiterunner
+sudo make build
+sudo ln -s /opt/kiterunner/dist/kr /usr/bin/kr
+```
+
+>Run kiterunner with command `kr`  
+
+----  
+
+>[Your API Hacking Lab](https://university.apisec.ai/products/api-penetration-testing/categories/2150251486/posts/2157710632)  
 
 
