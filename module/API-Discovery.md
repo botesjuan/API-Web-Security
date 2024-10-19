@@ -87,6 +87,8 @@ sudo docker-compose pull
 sudo docker-compose -f docker-compose.yml --compatibility up -d
 ```  
 
+>Validate if ***crAPI*** is working: `http://127.0.0.1:8888` and mail service on `http://127.0.0.1:8025`  
+
 >Setup and install vAPI  
 
 ```
@@ -107,3 +109,14 @@ sudo docker-compose restart
 >Navigate to `http://127.0.0.1/vapi` to get to the vAPI home page.  
 >vAPI comes with a prebuilt Postman collection and environment.  
 >Get JSON files from the vAPI/postman folder.  
+
+>HackTheBox (Retired Machines) Lab Machines:  
+
+* Craft
+* Postman
+* JSON
+* Node
+* Help  
+
+----  
+
