@@ -75,4 +75,25 @@ sudo ln -s /opt/kiterunner/dist/kr /usr/bin/kr
 
 >[Your API Hacking Lab](https://university.apisec.ai/products/api-penetration-testing/categories/2150251486/posts/2157710632)  
 
+>The Completely Ridiculous API (crAPI) from OWASP  
+
+```
+mkdir ~/lab 
+cd ~/lab
+sudo curl -o docker-compose.yml https://raw.githubusercontent.com/OWASP/crAPI/main/deploy/docker/docker-compose.yml
+sudo docker-compose pull
+sudo docker-compose -f docker-compose.yml --compatibility up -d
+```  
+
+>Setup and install vAPI  
+
+```
+cd ~/lab
+sudo git clone https://github.com/roottusk/vapi.git
+cd /vapi
+sudo docker-compose up -d
+```  
+
+>Check status of running docker container instances: `docker ps -a`  
+
 
