@@ -87,6 +87,8 @@ sudo docker-compose pull
 sudo docker-compose -f docker-compose.yml --compatibility up -d
 ```  
 
+![crapi-docker-lab.png](/images/crapi-docker-lab.png)  
+
 >Validate if ***crAPI*** is working: `http://127.0.0.1:8888` and mail service on `http://127.0.0.1:8025`  
 
 >Setup and install vAPI  
