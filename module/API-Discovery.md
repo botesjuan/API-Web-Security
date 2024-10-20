@@ -24,7 +24,7 @@ sudo apt-get remove mitmproxy
 sudo apt-get purge mitmproxy
 sudo apt update && sudo apt upgrade -y
 
-# reboot kali  
+# reboot Kali  
 
 sudo apt install --reinstall mitmproxy
 
