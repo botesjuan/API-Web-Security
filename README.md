@@ -7,7 +7,7 @@
 
 ## Course Sections  
 
-* [API Discovery](/module/API-Discovery.md)  
+* [API Lab Setup & Discovery](/module/API-Discovery.md)  
 * [Endpoint Analysis](/module/Endpoint-Analysis.md)  
 * [Vulnerability Scanning](/module/Vulnerability-Scanning.md)  
 * [Authentication Attacks](/module/Authentication-Attacks.md)  
