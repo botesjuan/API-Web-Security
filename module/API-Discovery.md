@@ -73,6 +73,16 @@ sudo ln -s /opt/kiterunner/dist/kr /usr/bin/kr
 
 >Run kiterunner with command `kr`  
 
+>Install ***mitmproxy2swagger*** using python3 virtual environment:  
+
+```
+python3 -m venv .venv
+ls .venv
+source .venv/bin/activate
+pip install mitmproxy2swagger
+mitmproxy2swagger
+```  
+
 ----  
 
 ## API Labs  
