@@ -75,6 +75,8 @@ sudo ln -s /opt/kiterunner/dist/kr /usr/bin/kr
 
 ----  
 
+## API Labs  
+
 >[Your API Hacking Lab](https://university.apisec.ai/products/api-penetration-testing/categories/2150251486/posts/2157710632)  
 
 >The Completely Ridiculous API (crAPI) from OWASP  
@@ -90,6 +92,10 @@ sudo docker-compose -f docker-compose.yml --compatibility up -d
 ![crapi-docker-lab.png](/images/crapi-docker-lab.png)  
 
 >Validate if ***crAPI*** is working: `http://127.0.0.1:8888` and mail service on `http://127.0.0.1:8025`  
+
+![crapi-owasp.png](/images/crapi-owasp.png)  
+
+----  
 
 >Setup and install vAPI  
 
