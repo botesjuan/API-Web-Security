@@ -19,9 +19,9 @@
 
 ![postman-add-requests.png](/images/postman-add-requests.png)  
 
-8. Create folders and move the requests in colleciton to folders matching endpoints of the API.
+8. Create folders and move the requests in collection to folders matching endpoints of the API.
 
-![postman-create-folders-organize-api-endpoints.png](/images/postman-create-folders-organize-api-endpoints.png)  
+![postman-create-folders-organize API endpoints](/images/postman-create-folders-organize-api-endpoints.png)  
 
 ----  
 
@@ -54,7 +54,7 @@
 
 ![postman-get-auth-token.png](/images/postman-get-auth-token.png)  
 
->response received include latest ***bearer*** authenticaiton token in the response body, copy and place at top of collection for this API as global bearer authenticaiton token:  
+>response received include latest ***bearer*** authentication token in the response body, copy and place at top of collection for this API as global bearer authenticaiton token:  
 
 ![postman-update-collection-authorization-globaltoken.png](/images/postman-update-collection-authorization-globaltoken.png)   
 
@@ -85,4 +85,23 @@
 
 >[Endpoint Analysis Assessment Exercise](https://university.apisec.ai/products/2147849691/categories/2150251353/posts/2163584818)  
 
+>[Public Documentation for VAPI](http://vapi.apisec.ai/vapi)  
 
+>When using vAPI, which fields are documented for the POST request to `/vapi/api1/user`?  
+
+![](images/)  
+
+>Which request methods are documented for `/vapi/api1/user`?
+
+
+![](images/)  
+
+>Which of the following response headers are returned with a successful request to `/vapi/api1/user`?
+
+![](images/)  
+
+>Which vAPI endpoint is used to get the flag for Insufficient Logging & Monitoring?
+
+![](images/)  
+
+----  
