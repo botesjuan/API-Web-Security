@@ -87,6 +87,8 @@ mitmproxy2swagger
 
 ## API Labs  
 
+### crAPI LAB  
+
 >[Your API Hacking Lab](https://university.apisec.ai/products/api-penetration-testing/categories/2150251486/posts/2157710632)  
 
 >The Completely Ridiculous API (crAPI) from OWASP  
@@ -107,12 +109,14 @@ sudo docker-compose -f docker-compose.yml --compatibility up -d
 
 ----  
 
->Setup and install vAPI  
+### vAPI LAB  
+
+>Setup, install, and start vAPI docker container:  
 
 ```
 cd ~/lab
 sudo git clone https://github.com/roottusk/vapi.git
-cd /vapi
+cd ~/lab/vapi
 sudo docker-compose up -d
 ```  
 

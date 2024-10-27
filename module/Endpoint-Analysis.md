@@ -36,7 +36,7 @@
 ![mitmweb-mitmproxy.png](/images/mitmweb-mitmproxy.png)  
 
 6. Then run command `mitmproxy2swagger -i flows -o spec.yml -p http://127.0.0.1:8888 -f flow --examples`  
-7. Edit online swagger at `https://editor.swagger.io`, also used to visualize API Documentation.  
+7. Edit online swagger at new `https://editor-next.swagger.io/`, also used to visualize API Documentation.  
 
 ----  
 
