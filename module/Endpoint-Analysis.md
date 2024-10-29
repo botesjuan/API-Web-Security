@@ -89,19 +89,28 @@
 
 >When using vAPI, which fields are documented for the POST request to `/vapi/api1/user`?  
 
-![](images/)  
+![vAPI-fields-POST-request.png](images/vAPI-fields-POST-request.png)  
 
->Which request methods are documented for `/vapi/api1/user`?
+>Send Postman requests to the Burp proxy port `8080`:  
 
+![postman-proxy-requests-2-burp.png](/images/postman-proxy-requests-2-burp.png)  
 
-![](images/)  
+>Postman, settings, proxy, custom proxy configuration:  
 
->Which of the following response headers are returned with a successful request to `/vapi/api1/user`?
+![postman-proxy-requests-2-burp-custom.png](/images/postman-proxy-requests-2-burp-custom.png)  
 
-![](images/)  
+>Which request methods are documented for `/vapi/api1/user`?  
 
->Which vAPI endpoint is used to get the flag for Insufficient Logging & Monitoring?
+![vAPI-request-methods.png](images/vAPI-request-methods.png)  
 
-![](images/)  
+>Documentation show HTTP verbs to be: `POST`, `GET`, `PUT`, but the endpoint for the specific user profile show HTTP verbs: `HEAD`, `GET`, `PUT`  
+
+>Which of the following response headers are returned with a successful request to `/vapi/api1/user`?  
+
+![vAPI-response-headers-returned.png](images/vAPI-response-headers-returned.png)  
+
+>Which vAPI endpoint is used to get the flag for ***Insufficient Logging & Monitoring***?  
+
+![vAPI-intruder-sniper-flag-attack.png](images/vAPI-intruder-sniper-flag-attack.png)  
 
 ----  
