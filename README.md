@@ -10,7 +10,6 @@
 * [API Lab Setup & Discovery](/module/API-Discovery.md)  
 * [API Reconnaissance](/module/api-reconnaissance.md)  
 * [Endpoint Analysis](/module/Endpoint-Analysis.md)  
-* [Vulnerability Scanning](/module/Vulnerability-Scanning.md)  
 * [Authentication Attacks](/module/Authentication-Attacks.md)  
 * [Exploiting Authorization](/module/Exploiting-Authorization.md)  
 * [Testing for Improper Assets Management](/module/xxx.md)  

@@ -81,7 +81,7 @@
 
 ----  
 
-# Endpoint Analysis Assessment  
+## Endpoint Analysis Assessment  
 
 >[Endpoint Analysis Assessment Exercise](https://university.apisec.ai/products/2147849691/categories/2150251353/posts/2163584818)  
 
@@ -114,3 +114,39 @@
 ![vAPI-intruder-sniper-flag-attack.png](images/vAPI-intruder-sniper-flag-attack.png)  
 
 ----  
+
+## Security Misconfigurations  
+
+>[Finding Security Misconfigurations - Scanning APIs](https://university.apisec.ai/products/api-penetration-testing/categories/2150251355/posts/2157505653)  
+
+>Scanning APIs with OWASP ZAP ^^  
+
+>crAPI Solution Chalanges [crAPI walkthrough](https://zerodayhacker.com/crapi-walkthrough-using-ai/)  
+
+>In the current state of API security, which vulnerability do automated scanners detect? API7:2019 Security Misconfiguration  
+
+>What kind of results can a generic vulnerability scan of a web API lead to? False-Negative  
+
+----  
+
+## Scanning APIs Assessment  
+
+>[APISEC - Scanning APIs Assessment](https://university.apisec.ai/products/2147849691/categories/2150251355/posts/2163585553)  
+
+>Which of the following are security misconfigurations detected when using the automated scan feature of ZAP on http://vapi.apisec.ai/vapi?  
+
+* Application Error Disclosure
+* `.htaccess` Information Leak
+* X-Content-Type Options Header Missing  
+
+>Which of the following endpoints are detected when using the automated scan feature of ZAP on http://vapi.apisec.ai/vapi?  
+
+* API1  
+* API5  
+
+>Which of the following vulnerabilities are indicated at http://vapi.apisec.ai/vapi#tag/API7?  
+
+* Cross-Origin resource sharing (CORS) Misconfiguration  
+
+----  
+
