@@ -87,8 +87,18 @@ Dorsey@2022
 
 >Extract emails, with regular expressions to pull emails from the saved JSON response.  
 
+>If the output in Burp is too large for the response window, then copy the request into `curl` command and save output to `response.json`  
+
+```bash
+curl --path-as-is -i -s -k -X $'GET' \
+    -H $'Host: 127.0.0.1:8888' -H $'sec-ch-ua-platform: \"Linux\"' -H $'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTczMDI3NjkyNCwiZXhwIjoxNzMwODgxNzI0LCJyb2xlIjoidXNlciJ9.ZWyuFqX5-mkyY4i-Iiwk8lnHWR_TJmw0wEOuhODqyRce94JSAc6BdZaDAr6V5QfQpeBJ3LL6rx3e46hRGf2_0CEtHanSvpMqRvxRLMhsgXqkylczWVG1rMEU6tC_4mK3WTx7JeGRsJGBcCaehbAO23f6Vw5s4uVhTGvracy-mO_Qc89nJBdm37S2SVpUfZtgMV_PceIExlg_ZVFJi9xA4ARtaUp8Edh_Q6vO9CePllB_77j7FsbXa1hEa1-bnY1AO2muBMYUEweptjsy30WGWfIm-YsaVy4pM4Ttvjx5LlFTXqTUiXvIJwL9_kiic2rQbsq6ZFJKlV0YSjT3vEXC9A' -H $'Accept-Language: en-US,en;q=0.9' -H $'sec-ch-ua: \"Not?A_Brand\";v=\"99\", \"Chromium\";v=\"130\"' -H $'Content-Type: application/json' -H $'sec-ch-ua-mobile: ?0' -H $'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.59 Safari/537.36' -H $'Accept: */*' -H $'Sec-Fetch-Site: same-origin' -H $'Sec-Fetch-Mode: cors' -H $'Sec-Fetch-Dest: empty' -H $'Referer: http://127.0.0.1:8888/forum' -H $'Accept-Encoding: gzip, deflate, br' -H $'Connection: keep-alive' \
+    $'http://127.0.0.1:8888/community/api/v2/community/posts/recent?limit=30&offset=0' > response.json
+```  
+
+>Get email values from response file using grep:  
+
 ```
-$grep -oe "[a-zA-Z0-9._]\+@[a-zA-Z]\+.[a-zA-Z]\+" response.json
+grep -oe "[a-zA-Z0-9._]\+@[a-zA-Z]\+.[a-zA-Z]\+" response.json
 ```  
 
 >Note on Base64 Encoding  
@@ -98,3 +108,18 @@ $grep -oe "[a-zA-Z0-9._]\+@[a-zA-Z]\+.[a-zA-Z]\+" response.json
 
 ----  
 
+## API Token Attacks  
+
+>[API Token Attacks - API Authentication Attacks](https://university.apisec.ai/products/api-penetration-testing/categories/2150251352/posts/2157505646)  
+
+### Token Analysis  
+
+>
+
+### JWT Attacks  
+
+>
+
+### Automating JWT attacks with JWT_Tool  
+
+>
