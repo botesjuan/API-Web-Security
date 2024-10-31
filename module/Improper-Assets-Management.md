@@ -62,5 +62,7 @@ gobuster dir -k -U vdaisley -P calculus20 -u http://dev.topology.htb/ -w /home/k
 >Authenticated Directory scan, recursive depth set, to identify API versions.  
 
 ```
-ffuf -ic -c -recursion -recursion-depth 6 -v -w /home/kali/Downloads/apisec/api-version-wordlist.txt:FUZZ -u http://127.0.0.1:8888/FUZZ -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyYUB0ZXN0LmNvbSIsImlhdCI6MTczMDM3NjE4MywiZXhwIjoxNzMwOTgwOTgzLCJyb2xlIjoidXNlciJ9.riFfmYqEru802VuvHc-T6Olg0Pz653rhfrvJkHsI4cGFW2PzR8F3kvoOo41XV3ugPpGC2kyyp2UEFk3LmytmJMrLh7qtJc8LJPpkLf8w_WhhWia9KAARanx_6sN_DmkWVaRTg2a84vCb4Ex6B4AQtVu758ZfHnCRPSqyZ1MmkJXAndIcp5NjEYm89YQqLn6jDlLwEgXMAeg8x86D6mtHNfR2vxdtZXYVy2AQNgIJmiQRGA_VkLSlTdDif1_gs8Qg1oLjXtZXiqKlTB55BqB5pqQXVIaO6JtcpI1yTB_ZahQ_Y9vCqWvH02X0_G5Cb0Jo7tPBEOm_vLDKmr4ChPLUcQ'
+ffuf -ic -c -recursion -recursion-depth 6 -v -w /home/kali/Downloads/apisec/api-version-wordlist.txt:FUZZ -u http://127.0.0.1:8888/FUZZ -H 'Authorization: Bearer eyJhbGciOiJSUzI<snip>DKmr4ChPLUcQ'
 ```
+
+![crapi-inproper-assets-management.png](/images/crapi-inproper-assets-management.png)  
