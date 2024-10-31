@@ -12,7 +12,7 @@
 * [Endpoint Analysis](/module/Endpoint-Analysis.md)  
 * [Authentication Attacks](/module/Authentication-Attacks.md)  
 * [Exploiting Authorization](/module/Exploiting-Authorization.md)  
-* [Testing for Improper Assets Management](/module/xxx.md)  
+* [Testing for Improper Assets Management](/module/Improper-Assets-Management.md)  
 * [Mass Assignment](/module/xxx.md)  
 * [Injection Attacks](/module/xxx.md)  
 * [Rate Limit Testing](/module/xxx.md)  
