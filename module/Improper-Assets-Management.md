@@ -2,7 +2,10 @@
 
 >[Testing for Improper Assets Management](https://university.apisec.ai/products/api-penetration-testing/categories/2150251354/posts/2157505650)  
 
->Often times an API provider will update services and the newer version of the API will be available over a new path like the following:
+>Bill of material also relates to versions of software develoipment releases of application.  
+>API provider will update services and the newer version of the API will be available over a new path.  
+
+Examples of paths:
 
 ```
 api.target.com/v3
