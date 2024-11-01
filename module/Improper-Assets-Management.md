@@ -92,3 +92,30 @@ ffuf -ic -c -recursion -recursion-depth 6 -v -w /home/kali/Downloads/apisec/api-
 
 ----  
 
+>API:2019 Improper Assets Management is most like which other common vulnerability?
+
+* OWASP AO6:2021 Vulnerable and Outdated Components.  
+
+>Improper Assets Management vulnerability primarily involves what?
+
+* Exposed and unsupported API versions  
+
+>The crAPI Improper Assets Management vulnerability affected which endpoint?
+
+* identity/api/auth/  
+
+>The Improper Assets Management vulnerability affecting crAPI allows you to perform which attack?
+
+* Brute Force  
+
+>Which of the following are methods used for API versioning?
+
+* Request parameters
+* Request Headers
+* URL path  
+
+>Which security controls would NOT have helped reduce the risk of the crAPI Improper Assets Management vulnerability?
+
+* By increasing the number of API versions  
+
+----  
