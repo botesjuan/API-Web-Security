@@ -71,7 +71,9 @@ $nin
 >Many of the others in the list contain symbols that are meant to cause verbose errors.  
 >Other payload samples attempt to bypassing authentication or waiting 10 seconds.  
 
->Enumeration of JSON POST body fields provide an error message that indicate possible noSQL:  
+>Enumeration of JSON POST body fields provide an error message that indicate possible noSQL.  
+>`422 Unprocessably entity code` The ” character in the payload closes the value field and the server doesn’t know what to do with the remaining characters.  
+
 
 ```JSON
 {"error":"invalid character '$' after object key:value pair"}
@@ -163,6 +165,32 @@ It could be very expensive and annoying to maintain it.
 Anyhow, if you host your own instance of crAPI, you can simply change the
 `block_shell_injections` flag in the config file to allow real shell injections.
 ```  
+
+>Which of the following is not a type of injection attack?  
+
+* Authorization Injection  
+
+>Which tool is ideal for fuzzing across an entire API?  
+
+* Postman Collection Runner  
+
+>Which anomalous status code resulted in the discovery of an injection vulnerability in crAPI?  
+
+* 422  
+
+>Which of the following attacks was crAPI vulnerable to?  
+
+* NoSQL Injection  
+
+>Which of the following would not be useful for detecting a successful injection attack?  
+
+* An HTTP 208 Already Reported response  
+
+>Which of the following tools is ideal for fuzzing deep into an individual request?
+
+* Burp Suite Intruder
+
+----  
 
 ## Fuzzing WFuzz  
 
