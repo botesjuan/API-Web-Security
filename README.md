@@ -14,6 +14,7 @@
 * [Exploiting Authorization](/module/Exploiting-Authorization.md)  
 * [Testing for Improper Assets Management](/module/Improper-Assets-Management.md)  
 * [Mass Assignment](/module/mass-assignment.md)  
+* [Exploiting SSRF](/module/exploiting-ssrf.md)  
 * [Injection Attacks](/module/xxx.md)  
 * [Rate Limit Testing](/module/xxx.md)  
 * [Combining Tools and Techniques](/module/xxx.md)  

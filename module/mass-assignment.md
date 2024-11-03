@@ -90,6 +90,51 @@ sudo docker-compose up -d
 
 >Impact is create our own product items, and quantity that has a negative value allow purchase item ,and exploit lead to a new account balance positive.  
 
+----  
 
+>Mass Assignment vulnerabilities are present when an attacker is able to:  
 
+* Overwrite object properties that they should not be able to  
 
+>Which of the following is required for a mass assignment vulnerability to be present?  
+
+* An API must be lacking user input validation
+
+>Which of the following often helps the most in discovering parameter names to use in a Mass Assignment attack?
+
+* Admin API Documentation  
+
+>Which of the following crAPI URLs is vulnerable to Mass Assignment?  
+
+* http://crapi.apisec.ai/workshop/api/shop/products  
+
+>What is the impact of the crAPI mass assignment vulnerability?  
+
+* An attacker can arbitrarily add funds to their account  
+
+# Mass Assignment Assessment  
+
+>[Mass Assignment Assessment](https://university.apisec.ai/products/2147849691/categories/2150251359/posts/2163536891)  
+
+>Which two requests are available for testing vAPI for Mass Assignment (API6)?  
+
+* GET /vapi/api6/user/me
+* POST /vapi/api6/user
+
+>What is the field that can be used in a mass assignment attack against /vapi/api6?  
+
+* credit  
+
+>What is the flag for successfully exploiting vAPI's Mass Assignment vulnerability?  
+
+* api6_afb969db8b6e272694b4  
+
+>What HTTP response code is returned after performing a successful mass assignment attack against vAPI?  
+
+* 200 ok  
+
+>What HTTP response code is returned when sending a PUT request to http://vapi.apisec.ai/vapi/api6/user?  
+
+* 500 error  
+
+----  
