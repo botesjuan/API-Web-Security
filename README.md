@@ -26,7 +26,7 @@
 * [OWASP API Security Top 10](/module/OWASP-API-Security-Top-10.md)  
 * [API1:2023 Broken Object Level Authorization](/module/bola.md)  
 * [API2:2023 Broken Authentication](/module/Broken-Auth.md)  
-* [API3:2023 Broken Object Property Level Authorization]()  
+* [API3:2023 Broken Object Property Level Authorization](/module/bopla.md)  
 * [API4:2023 Unrestricted Resource Consumption]()  
 * [API5:2023 Broken Function Level Authorization]()  
 * [API6:2023 Unrestricted Access to Sensitive Business Flows]()  

@@ -35,5 +35,24 @@
 
 ----  
 
->
+>Which of the following accurately describes "Broken Authentication" in APIs?
 
+* API authentication is any weakness within the API authentication process.  
+
+>According to the OWASP, which of the following is NOT considered a direct contributing factor to Broken Authentication in APIs?  
+
+* Excessive data exposure through the API.  
+
+>What can be the potential impact of Broken Authentication in APIs?  
+
+* Attackers can gain control of other users' accounts, read their personal data, and perform sensitive actions on their behalf  
+
+>What does a "Predictable Token" refer to in the context of API security?  
+
+* A token obtained through a weak token generation process that can easily be guessed, deduced, or calculated by an attacker.
+
+>Which of the following is NOT recommended by the OWASP API Security project as a preventative measure against Broken Authentication?  
+
+>Use API keys for user authentication as well as client authentication.  
+
+----  
