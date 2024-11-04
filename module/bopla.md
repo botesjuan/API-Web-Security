@@ -30,4 +30,24 @@
 
 ----  
 
+>Which of the following best describes an "Excessive Data Exposure" vulnerability?  
 
+* The API responds with more information than needed to fulfill a request.  
+
+>What could be a consequence of "Mass Assignment" vulnerability?  
+
+* It could allow a user to escalate privileges or edit object properties.  
+
+>When an API exposes an object, which of the following is NOT a recommended preventative measure?  
+
+* Use generic methods such as to_json() and to_string().  
+
+>What is the potential impact of unauthorized access to an API endpoint due to broken object property level authorization?  
+
+* Data disclosure to unauthorized parties, data loss, or data manipulation.  
+
+>How can you detect if an API endpoint is vulnerable to excessive data exposure?  
+
+* By sending requests to the target API endpoints and reviewing the information sent in response.  
+
+----  
