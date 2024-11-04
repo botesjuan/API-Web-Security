@@ -5,7 +5,7 @@
 
 ----  
 
-## Course Sections  
+## API Penetration Testing Course Sections  
 
 * [API Lab Setup & Discovery](/module/API-Discovery.md)  
 * [API Reconnaissance](/module/api-reconnaissance.md)  
@@ -21,9 +21,29 @@
 
 ----  
 
+## OWASP API Security Top 10 and Beyond  
+
+* [OWASP API Security Top 10](/module/OWASP-API-Security-Top-10.md)  
+* [API1:2023 Broken Object Level Authorization](/module/bola.md)  
+* [API2:2023 Broken Authentication](/module/Broken-Auth.md)  
+* [API3:2023 Broken Object Property Level Authorization]()  
+* [API4:2023 Unrestricted Resource Consumption]()  
+* [API5:2023 Broken Function Level Authorization]()  
+* [API6:2023 Unrestricted Access to Sensitive Business Flows]()  
+* [API7:2023 Server Side Request Forgery]()  
+* [API8:2023 Security Misconfiguration]()  
+* [API9:2023 Improper Inventory Management]()  
+* [API10:2023 Unsafe Consumption of APIs]()  
+* [Injection]()  
+* [Insufficient Logging and Monitoring]()  
+* [Business Logic Flaws]()  
+* [Beyond the Top 10 Quiz]()  
+
+----  
+
 ## References  
 
-* [CASA Multiple Choice Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+* [CASA - 100 multiple choice questions Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
 * [ASCP Practical 12 hours hands-on Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
 * [crAPI OWASP Solution Chalanges - walkthrough](https://github.com/OWASP/crAPI/blob/7ceb7fa890f5376fdccacc2346c9d2f32097c59f/docs/challengeSolutions.md)  
 
