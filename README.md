@@ -44,5 +44,6 @@
 * [ASCP Practical 12 hours hands-on Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
 * [crAPI OWASP Solution Chalanges - walkthrough](https://github.com/OWASP/crAPI/blob/7ceb7fa890f5376fdccacc2346c9d2f32097c59f/docs/challengeSolutions.md)  
 * [Roger's Blog on ASCP Exam attempts](https://blog.invid.eu/2024/07/16/what-do-i-think-of-passing-the-ascp-exam-from-apisec-university/)  
+* [TCM Security - API Hacking Course by Alex Olsen](https://academy.tcm-sec.com/p/hacking-apis)  
 
 ----  
