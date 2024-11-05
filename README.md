@@ -40,7 +40,7 @@
 
 ## References  
 
-* [CASA - 100 multiple choice questions Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+* [CASA - 100 multiple choice questions Exam in 2 hours](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
 * [ASCP Practical 12 hours hands-on Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
 * [crAPI OWASP Solution Chalanges - walkthrough](https://github.com/OWASP/crAPI/blob/7ceb7fa890f5376fdccacc2346c9d2f32097c59f/docs/challengeSolutions.md)  
 
