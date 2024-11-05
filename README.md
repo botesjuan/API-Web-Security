@@ -30,14 +30,11 @@
 * [API4:2023 Unrestricted Resource Consumption](/module/rate-limit.md)  
 * [API5:2023 Broken Function Level Authorization](/module/bfla.md)  
 * [API6:2023 Unrestricted Access to Sensitive Business Flows](/module/business-flaws.md)  
-* [API7:2023 Server Side Request Forgery]()  
-* [API8:2023 Security Misconfiguration]()  
-* [API9:2023 Improper Inventory Management]()  
-* [API10:2023 Unsafe Consumption of APIs]()  
-* [Injection]()  
-* [Insufficient Logging and Monitoring]()  
-* [Business Logic Flaws]()  
-* [Beyond the Top 10 Quiz]()  
+* [API7:2023 Server Side Request Forgery](/module/ssrf.md)  
+* [API8:2023 Security Misconfiguration](/module/misconfig.md)  
+* [API9:2023 Improper Inventory Management](/module/bom.md)  
+* [API10:2023 Unsafe Consumption of APIs](/module/consumption-of-api.md)  
+* [Injection, Insufficient Logging and Monitoring & Business Logic Flaws](/module/Injection.md)  
 
 ----  
 
