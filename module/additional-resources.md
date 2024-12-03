@@ -10,4 +10,23 @@
 
 ----  
 
+# Labs to Practice API Hacking  
+
+* Portswigger - [API Testing on Web Security Academy](https://portswigger.net/web-security/all-labs#api-testing)  
+* TryHackMe  
+
+  * [Bookstore - free](https://tryhackme.com/r/room/bookstoreoc)
+  * [IDOR - $14/m paid](https://tryhackme.com/r/why-subscribe)
+  * [GraphQL - $14/m paid](https://tryhackme.com/r/why-subscribe)  
+ 
+* [HackTheBox Retired Machines](https://app.hackthebox.com/machines)  
+
+  * Craft
+  * Postman
+  * JSON
+  * Node
+  * Help  
+
+----  
+
 ![apisec-lessons-completed.png](/images/apisec-lessons-completed.png)  
