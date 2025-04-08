@@ -1,25 +1,17 @@
 # API Security University  
 
 >API Security University Study Notes  
->[API Security Course Content Online Training](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+>[CASA - Certified API Security Analyst Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
 
 ----  
 
-## API Penetration Testing Course Sections  
+# APIsec Certified Practitioner (ACP) Courses  
 
-* [API Lab Setup & Discovery](/module/API-Discovery.md)  
-* [API Reconnaissance](/module/api-reconnaissance.md)  
-* [Endpoint Analysis](/module/Endpoint-Analysis.md)  
-* [Authentication Attacks](/module/Authentication-Attacks.md)  
-* [Exploiting Authorization](/module/Exploiting-Authorization.md)  
-* [Testing for Improper Assets Management](/module/Improper-Assets-Management.md)  
-* [Mass Assignment](/module/mass-assignment.md)  
-* [Exploiting SSRF](/module/exploiting-ssrf.md)  
-* [Evasive Maneuvers](/module/evasive-maneuvers.md)
-* [Injection Attacks & WAF Rate Limiting](/module/injection-attacks.md)  
-* [Extra Additional Resources](/module/additional-resources.md)  
+## API Security Fundamentals 2025  
 
-----  
+* API Security  
+* Intro OWASP API Security Top 10  
+* 2B completed    
 
 ## OWASP API Security Top 10 and Beyond  
 
@@ -35,6 +27,46 @@
 * [API9:2023 Improper Inventory Management](/module/bom.md)  
 * [API10:2023 Unsafe Consumption of APIs](/module/consumption-of-api.md)  
 * [Injection, Insufficient Logging and Monitoring & Business Logic Flaws](/module/Injection.md)  
+
+## API Authentication  
+
+* Oauth Actors  
+* OAuth 2.0 Interaction Patterns  
+* Tokens  
+* Scopes and Claims  
+* 2B completed  
+
+## API Documentation Best Practices  
+
+* API Documentation  
+* Business Impact of API Documentation  
+* How to Write Good Documentation  
+* Documentation Techniques and Tools  
+* Documentation Best Practices  
+* 2B completed  
+
+## Securing API Servers  
+
+* Cross Origin Resource Sharing (CORS)  
+* Error Disclosure  
+* Information Leak  
+* Insecure Cookies  
+* Path Traversal  
+* Rate Limits  
+
+## API Penetration Testing  
+
+* [API Lab Setup & Discovery](/module/API-Discovery.md)  
+* [API Reconnaissance](/module/api-reconnaissance.md)  
+* [Endpoint Analysis](/module/Endpoint-Analysis.md)  
+* [Authentication Attacks](/module/Authentication-Attacks.md)  
+* [Exploiting Authorization](/module/Exploiting-Authorization.md)  
+* [Testing for Improper Assets Management](/module/Improper-Assets-Management.md)  
+* [Mass Assignment](/module/mass-assignment.md)  
+* [Exploiting SSRF](/module/exploiting-ssrf.md)  
+* [Evasive Maneuvers](/module/evasive-maneuvers.md)
+* [Injection Attacks & WAF Rate Limiting](/module/injection-attacks.md)  
+* [Extra Additional Resources](/module/additional-resources.md)  
 
 ----  
 
