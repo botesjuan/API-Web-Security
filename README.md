@@ -2,10 +2,12 @@
 
 >API Security University Study Notes  
 >[CASA - Certified API Security Analyst Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+>[ASCP - API Security Certified Professional Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
+>[ACP - APIsec Certified Practitioner](https://www.apisecuniversity.com/courses/apisec-certified-practitioner)  
 
 ----  
 
-# APIsec Certified Practitioner (ACP) Courses  
+# APIsec Courses  
 
 ## API Security Fundamentals 2025  
 
