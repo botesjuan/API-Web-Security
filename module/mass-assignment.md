@@ -1,6 +1,7 @@
 # Mass Assignment Attacks
 
->[Mass Assignment Vulnerabilities](https://university.apisec.ai/products/api-penetration-testing/categories/2150251359/posts/2157505663)  
+* [Mass Assignment Vulnerabilities](https://university.apisec.ai/products/api-penetration-testing/categories/2150251359/posts/2157505663)  
+* [PortSwigger Web Security Academy - API Testing](https://portswigger.net/web-security/learning-paths/api-testing/api-testing-mass-assignment-vulnerabilities/api-testing/testing-mass-assignment-vulnerabilities)  
 
 >The user registration request may contain key-values for username, email address, and password.  
 >An attacker could intercept this request and add parameters like "isadmin": "true".  

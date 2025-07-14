@@ -72,6 +72,12 @@
 
 ----  
 
+## LLM Attacks - PortSwigger Web Security Academy  
+
+* [Exploiting LLM APIs](/module/api-llm.md)  
+
+----  
+
 ## References  
 
 * [CASA - 100 multiple choice questions Exam in 2 hours](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  

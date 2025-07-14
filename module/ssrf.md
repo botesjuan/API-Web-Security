@@ -57,3 +57,26 @@
 * It could bypass firewalls or other security mechanisms.  
 
 ----  
+
+## Parameter Pollution  
+
+>Server-side Parameter pollution can occur in structured data formats, REST API paths, or query strings.  
+>Server-side parameter pollution can occur in JSON or XMNL structured data formats.  
+
+>Examples of parameter Pollution:  
+
+```
+GET /userSearch?name=peter%26foo=xyz&back=/home
+
+GET /users/search?name=peter&email=foo&publicProfile=true
+
+GET /users/search?name=peter&name=carlos&publicProfile=true
+
+GET /edit_profile.php?name=peter%2f..%2fadmin
+
+{name="peter","access_level":"administrator"}
+```  
+
+* [PortSwigger Web Security Academy - API Testing](https://portswigger.net/web-security/learning-paths/api-testing/api-testing-testing-for-server-side-parameter-pollution-in-the-query-string/api-testing/server-side-parameter-pollution/injecting-invalid-parameters)  
+
+>Using *** Backslash Powered Scanning***
