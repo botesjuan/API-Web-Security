@@ -72,9 +72,10 @@
 
 ----  
 
-## LLM Attacks - PortSwigger Web Security Academy  
+## PortSwigger Web Security Academy  
 
 * [Exploiting LLM APIs](/module/api-llm.md)  
+* [Race Conditions](/module/race-condition.md)  
 
 ----  
 
