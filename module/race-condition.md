@@ -46,7 +46,7 @@
 
 ### Turbo Intruder  
 
->Highlight the value of the password, and Send the login password request to ***Turbo Intruder*** extension.  
+>Highlight the value of the password `%s`, and Send the login password request to ***Turbo Intruder*** extension.  
 
 ![portswigger_race_condition_rate_limit_turboIntruder.png](/images/portswigger_race_condition_rate_limit_turboIntruder.png)  
 
@@ -75,8 +75,8 @@ def handleResponse(req, interesting):
     table.add(req)
 ```  
 
->Copy passwords into clipboard.
->click attack  
+>Copy passwords wordlist into clipboard.  
+>click ***Attack***  
 
 >Study the responses, for a successful login `HTTP/2 302 Found`, wait for lockout to reset.  
 
