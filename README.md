@@ -1,9 +1,11 @@
-# API Security University  
+# API & Web Application Security  
 
->API Security University Study Notes  
->[CASA - Certified API Security Analyst Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
->[ASCP - API Security Certified Professional Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
->[ACP - APIsec Certified Practitioner](https://www.apisecuniversity.com/courses/apisec-certified-practitioner)  
+>API Security University & PortSwigger Web Security Academy Study Notes  
+
+* [CASA - Certified API Security Analyst Exam](https://www.apisecuniversity.com/courses/certified-api-security-analyst-exam)  
+* [ASCP - API Security Certified Professional Exam](https://www.apisecuniversity.com/courses/api-security-certified-professional-exam)  
+* [ACP - APIsec Certified Practitioner](https://www.apisecuniversity.com/courses/apisec-certified-practitioner)  
+* [BSCP - Burp Suite Certified Practitioner](https://github.com/botesjuan/Burp-Suite-Certified-Practitioner-Exam-Study)  
 
 ----  
 
