@@ -84,4 +84,9 @@ def handleResponse(req, interesting):
 
 >Brute force login using race condition attack successful.  
 
-## 
+## Hidden multi-step sequences  
+
+>[PortSwigger Race Condition - Logic Flaws](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-hidden-multi-step-sequences/race-conditions/hidden-multi-step-sequences)  
+
+>Expose time-sensitive variations of the kinds of logic flaws  
+
