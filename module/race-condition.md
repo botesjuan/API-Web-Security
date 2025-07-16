@@ -84,9 +84,55 @@ def handleResponse(req, interesting):
 
 >Brute force login using race condition attack successful.  
 
-## Hidden multi-step sequences  
+## Hidden multi-step Collisions  
 
->[PortSwigger Race Condition - Logic Flaws](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-hidden-multi-step-sequences/race-conditions/hidden-multi-step-sequences)  
+>[PortSwigger Race Condition - Collisions Logic Flaws](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-hidden-multi-step-sequences/race-conditions/hidden-multi-step-sequences)  
 
 >Expose time-sensitive variations of the kinds of logic flaws  
+
+>Collisions identification, using the ***Trigger race conditions*** custom action, sends parallel requests with a single click.  
+
+>Connection ***warming*** technique to send initial request,  
+>time of request delays to see if following requests through backend architecture servers are delayed  
+>and may not interfere with collision race Condition attack.  
+
+![portswigger_race_condition_collisions.png](/images/portswigger_race_condition_collisions.png)  
+
+>How collision attack happened above:  
+
+1. add cheap gift card product to cart  
+2. Going to cart to check gift cart contain cheap gift card  
+3. Before sending checkout request with cheap product gift card, update a cart add request with expensive 3l33t jacket product
+4. then `Send group (parallel)` requests both the expensive product request and checkout cart with cheap gift card
+5. Due to collision race condition checkout purchase success with expensive product.  
+
+>Result the expensive product purchased and the store credit goes negative value.   
+
+## Single-endpoint Race Conditions  
+
+>Consider a password reset mechanism that stores the user ID and reset token in the user's session.  
+>Two parallel password reset requests from the same session, but with two different usernames, could potentially cause the collision.  
+
+![portswigger_race_condition_single_end_collisions.png](/images/portswigger_race_condition_single_end_collisions.png)  
+
+>The email update for customer portal allow race condition to single endpoint exploitation in compromising account takeover.  
+
+>[PortSwigger Lab: Single-endpoint race conditions](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-single-endpoint/race-conditions/lab-race-conditions-single-endpoint#)  
+
+## Time-Sensitive Tokenz  
+ 
+>Site use time stamps to hash password reset tokens.  
+
+>Send parallel force password reset for two different users at the same time, 
+>this will result in duplicate matching tokens because the same timestamp used to generate the reset tokenz.  
+
+>Receive the reset token url email and edit the name in the url to match `carlos` target victim user.  
+
+![portswigger_race_condition_force-forgot-password-tokenz.png](/images/portswigger_race_condition_force-forgot-password-tokenz.png)  
+
+>[PortSwigger Lab: Exploiting time-sensitive vulnerabilities](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-time-sensitive-attacks/race-conditions/lab-race-conditions-exploiting-time-sensitive-vulnerabilities#)  
+
+
+
+
 
