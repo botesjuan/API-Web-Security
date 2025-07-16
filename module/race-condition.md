@@ -132,7 +132,4 @@ def handleResponse(req, interesting):
 
 >[PortSwigger Lab: Exploiting time-sensitive vulnerabilities](https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-time-sensitive-attacks/race-conditions/lab-race-conditions-exploiting-time-sensitive-vulnerabilities#)  
 
-
-
-
-
+----  
