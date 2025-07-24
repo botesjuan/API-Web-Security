@@ -15,6 +15,8 @@
 
 * [API Security](/module/api-fundamentals.md)  
 * [Intro OWASP API Security Top 10](/module/api-fundamentals.md)  
+* [API Threat Modeling](/module/api-fundamentals.md)  
+* [API Best Practices](/module/api-fundamentals.md)  
 
 ## OWASP API Security Top 10 and Beyond  
 
@@ -33,11 +35,11 @@
 
 ## API Authentication  
 
-* Oauth Actors  
-* OAuth 2.0 Interaction Patterns  
-* Tokens  
-* Scopes and Claims  
-* 2B completed  
+* [Oauth Actors](/module/API-Authentication.md)  
+* [OAuth 2.0 Interaction Patterns](/module/API-Authentication.md)  
+* [Tokens](/module/API-Authentication.md)  
+* [Scopes and Claims](/module/API-Authentication.md)  
+* [APIs and Gateways](/module/API-Authentication.md)  
 
 ## API Documentation Best Practices  
 
