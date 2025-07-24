@@ -13,9 +13,8 @@
 
 ## API Security Fundamentals 2025  
 
-* API Security  
-* Intro OWASP API Security Top 10  
-* 2B completed    
+* [API Security](/module/api-fundamentals.md)  
+* [Intro OWASP API Security Top 10](/module/api-fundamentals.md)  
 
 ## OWASP API Security Top 10 and Beyond  
 
