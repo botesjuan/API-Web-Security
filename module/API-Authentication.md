@@ -53,4 +53,4 @@
 2. Authorize scope PXE
 3. Send state parameter
 4. Authentication process send to redirect to authentication service prompting user to go through verfication process  
-5. 
+5. incomplete ....  
