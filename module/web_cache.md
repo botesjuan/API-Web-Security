@@ -167,7 +167,7 @@ X-Cache: hit
 https://0a5600720421b10280036c920090001a.web-security-academy.net/resources/..%2fmy-account?nut
 ```  
 
-![portswigger_web_cache_exploit_server_directory_data_exfil.png](/images/portswigger_web_cache_exploit_server_directory_data_exfil.png)  
+>data Exfiltrated browsing to poisoned web cache url above  
 
 ## Exploit Normalization Cache Server  
 
@@ -226,7 +226,7 @@ https://0a5600720421b10280036c920090001a.web-security-academy.net/resources/..%2
 >Including the random arbitrary parameter used before as the cache buster `nuts`:  
 
 ```
-https://YOUR-LAB-ID.web-security-academy.net/my-account%23%2f%2e%2e%2fresources?nuts
+https://target.web.net/my-account%23%2f%2e%2e%2fresources?nuts
 ```  
 
 ## File Name Cache Rule   
