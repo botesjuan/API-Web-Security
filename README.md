@@ -85,6 +85,7 @@
 * [Exploiting LLM APIs](/module/api-llm.md)  
 * [Race Conditions](/module/race-condition.md)  
 * [No SQL - Mongo DB](/module/nosql.md)  
+* [Web Cache Deception](/module/web_cache.md)  
 
 ----  
 
