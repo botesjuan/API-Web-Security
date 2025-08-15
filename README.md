@@ -1,4 +1,4 @@
-# API & Web Application Security  
+# LLM - API - Web Application Security  
 
 >API Security University & PortSwigger Web Security Academy Study Notes  
 
@@ -10,7 +10,7 @@
 ----  
 
 <br><br><a href="https://www.buymeacoffee.com/botesjuan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
->Thanks too all for your support by buying me ***coffee***, thanks you so much `\o/`  
+>Thanks too all for your support by buying me ***coffee***, thank you so much `\o/`  
   
 ----  
 
@@ -86,6 +86,7 @@
 * [Race Conditions](/module/race-condition.md)  
 * [No SQL - Mongo DB](/module/nosql.md)  
 * [Web Cache Deception](/module/web_cache.md)  
+* [LLM Web Attacks](/module/llm_web_attacks.md)  
 
 ----  
 
