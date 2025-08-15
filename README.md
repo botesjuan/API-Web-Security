@@ -48,12 +48,12 @@
 
 ## API Documentation Best Practices  
 
-* API Documentation  
-* Business Impact of API Documentation  
-* How to Write Good Documentation  
-* Documentation Techniques and Tools  
-* Documentation Best Practices  
-* 2B completed  
+* [API Documentation](/module/api_documentation.md)  
+* [Business Impact of API Documentation](/module/api_documentation.md)    
+* [How to Write Good Documentation](/module/api_documentation.md)    
+* [Documentation Techniques and Tools](/module/api_documentation.md)    
+* [Documentation Best Practices](/module/api_documentation.md)    
+
 
 ## Securing API Servers  
 
