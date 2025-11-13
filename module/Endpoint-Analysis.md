@@ -6,10 +6,10 @@
 
 >Building a Collection in `Postman`  
 
-1. Start Postman
+1. Start Postman `/snap/bin/postman &`  
 2. Create new workspace
 3. Create a collection in new workspace
-4. Select `Capture Requests`, and enable proxy.  
+4. Select `Capture Requests`, and enable proxy to BURP in settings.  
 
 ![postman-capture-requests-enable-proxy4.png](/images/postman-capture-requests-enable-proxy4.png)  
 
